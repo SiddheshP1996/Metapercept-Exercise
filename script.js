@@ -27,3 +27,14 @@ fetch("class.json")
   .catch((error) => {
     console.error("Error fetching the JSON data:", error);
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var backToTopButton = document.getElementById("backToTop");
+
+  backToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
