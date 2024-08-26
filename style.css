@@ -1,0 +1,35 @@
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.title-content {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 24%, rgba(4, 134, 204, 1) 53%, rgba(141, 0, 255, 1) 95%);
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    /* Limit text to 3 lines */
+}
+
+.text-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    /* Limit text to 2 lines */
+}
